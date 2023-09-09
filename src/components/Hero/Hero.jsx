@@ -36,7 +36,7 @@ const Hero = () => {
                                     </div>
                                 </div>
                                 <div className="w-full flex justify-center items-center max-w-full px-4">
-                                    <div className="navbar-logo block w-96 py-4">
+                                    <div className="navbar-logo block w-96 lg:w-11/12 py-4">
                                         <img
                                             src={zorphixlanding}
                                             alt="logo"
@@ -62,7 +62,7 @@ const Hero = () => {
                                             target="_blank"
                                             className="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
                                         >
-                                            Star on Github
+                                            Go to events
                                             <span className="pl-2">
                                                 <svg
                                                     width="20"
