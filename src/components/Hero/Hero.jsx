@@ -15,7 +15,7 @@ const Hero = () => {
 
     return (
         <div>
-            <div className="bg-video">
+            <div className="bg-video h-screen">
                 <video className="bg-video__content" autoPlay muted loop>
                     <source src={bgvideo} type="video/mp4" />
                     Your browser is not supported!
