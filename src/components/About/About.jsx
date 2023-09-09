@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../assets/css/App.css';
 import aboutimg from '../../assets/images/about/about-image.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    },[])
+
     return (
-        <div id="about" className="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
+        <div id="about" className="bg-grad pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
             <div className="container">
-                <div className="wow fadeInUp bg-white" data-wow-delay=".2s">
+                <div className="wow fadeInUp rounded-xl bg-white" data-aos = "fade-down">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
-                            <div className="items-center justify-between overflow-hidden border lg:flex">
+                            <div className="items-center justify-between overflow-hidden lg:flex">
                                 <div className="w-full py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]">
                                     <span className="mb-5 inline-block bg-primary py-2 px-5 text-sm font-medium text-white">
                                         About Us
@@ -30,7 +37,7 @@ const About = () => {
                                     </p>
                                     <a
                                         href="javascript:void(0)"
-                                        className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
+                                        className="inline-flex items-center justify-center rounded-xl bg-primary py-2 px-4 mr-2 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
                                     >
                                         Learn More
                                     </a>

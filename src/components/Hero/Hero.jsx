@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../assets/css/App.css';
 import zorphixfinal from '../../assets/images/SignIn/Zorphix final without name.png';
 import zorphixlanding from '../../assets/images/logo/zorphixlanding.png';
 import bgvideo from '../../assets/video/zorphixbgnew.mp4';
 import Counter from '../Counter/Counter';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    })
+
     return (
         <div>
             <div className="bg-video">
@@ -32,6 +39,7 @@ const Hero = () => {
                                             src={zorphixfinal}
                                             alt="logo"
                                             className="header-logo w-full"
+                                            data-aos = "zoom-in"
                                         />
                                     </div>
                                 </div>
@@ -41,6 +49,7 @@ const Hero = () => {
                                             src={zorphixlanding}
                                             alt="logo"
                                             className="header-logo w-full"
+                                            data-aos = "zoom-out"
                                         />
                                     </div>
                                 </div>
