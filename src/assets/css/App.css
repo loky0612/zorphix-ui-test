@@ -2051,6 +2051,28 @@ body {
   object-fit: cover;
 }
 
+.h-fix{
+  height: 60vh;
+  /* margin-right: 4.5rem; */
+}
+
+/* Add this CSS to your stylesheet or a CSS module */
+.scrolling-images {
+  display: flex;
+  flex-direction: column;
+  animation: scrollAnimation 20s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
 
 @media (min-width: 540px) {
   .sm\:flex {

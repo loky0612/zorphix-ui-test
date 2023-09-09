@@ -5,15 +5,14 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const About = () => {
-
     useEffect(() => {
-        Aos.init({duration: 2000});
-    },[])
+        Aos.init({ duration: 2000 });
+    }, []);
 
     return (
         <div id="about" className="bg-grad pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
             <div className="container">
-                <div className="wow fadeInUp rounded-xl bg-white" data-aos = "fade-down">
+                <div className="wow fadeInUp rounded-xl bg-white" data-aos="fade-down">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
                             <div className="items-center justify-between overflow-hidden lg:flex">
@@ -42,13 +41,25 @@ const About = () => {
                                         Learn More
                                     </a>
                                 </div>
-                                <div className="text-center">
+                                <div className="text-center overflow-scroll h-fix lg:px-16 scrollbar-hide">
                                     <div className="relative z-10 inline-block">
-                                        <img
-                                            src={aboutimg}
-                                            alt="image"
-                                            className="mx-auto lg:ml-auto"
-                                        />
+                                        <div className="scrolling-images">
+                                            <img
+                                                src={aboutimg}
+                                                alt="image"
+                                                className="mx-auto lg:ml-auto"
+                                            />
+                                            <img
+                                                src={aboutimg}
+                                                alt="image"
+                                                className="mx-auto lg:ml-auto"
+                                            />
+                                            <img
+                                                src={aboutimg}
+                                                alt="image"
+                                                className="mx-auto lg:ml-auto"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +68,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default About;
